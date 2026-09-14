@@ -48,7 +48,9 @@ all from a polished **Guna.UI2** desktop interface.
 
 ## 📸 Screenshots
 
-*(Add screenshots of the main window here — will be shipped with the Releases)*
+![Main form](docs/screenshots/Form.png)
+
+![App view](docs/screenshots/Form2.png)
 
 ---
 

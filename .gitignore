@@ -51,3 +51,6 @@ publish/
 
 # Backups
 Backup/
+# Local release packaging
+dist/
+
