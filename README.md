@@ -176,6 +176,6 @@ Note that third-party components (Guna.UI2, SharpOdinClient, K4os libraries) are
 
 <div align="center">
 
-**The tool is now ready for its next release 🚀** — *Stay tuned!*
+**ادعم المشروع بنجمة ⭐**
 
 </div>
