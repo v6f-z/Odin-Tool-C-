@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("OdinProtocol C# .Net By Anas Malik")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("Sharp Odin Protocol By Anas")]
+[assembly: AssemblyDescription("Sharp Odin Protocol - Samsung Advanced Flasher")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("OdinProtocol C# .Net By Anas Malik")]
-[assembly: AssemblyCopyright("Copyright ©  2026")]
+[assembly: AssemblyCompany("AMProTeam")]
+[assembly: AssemblyProduct("Sharp Odin Protocol By Anas")]
+[assembly: AssemblyCopyright("Copyright (c) 2026 Anas Malik")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
