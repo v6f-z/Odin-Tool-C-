@@ -67,7 +67,7 @@ all from a polished **Guna.UI2** desktop interface.
 
 ## 🛠️ Building from source
 
-1. Open `OdinProtocol C# .Net By Anas Malik.slnx` in **Visual Studio 2022 (17.10+)**.
+1. Open `Sharp Odin Protocol By Anas.slnx` in **Visual Studio 2022 (17.10+)**.
 2. NuGet packages are restored automatically on build.
 3. Build the solution in **Release** mode.
 
