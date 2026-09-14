@@ -7,10 +7,10 @@
 **A modern Windows flasher for Samsung Galaxy devices — built on the Odin download-mode protocol**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+![.NET Framework](https://img.shields.io/badge/.NET_Framework-4.8-5C2D91)
 ![Language](https://img.shields.io/badge/Language-C%23-239120)
-![Language](https://img.shields.io/badge/Language-UI-6A0DAD)
-![Language](https://img.shields.io/badge/Language-.NET_Framework-5C2D91)
 ![Platform](https://img.shields.io/badge/Platform-Windows-0078D6)
+![UI](https://img.shields.io/badge/UI-Guna.UI2-6A0DAD)
 ![Protocol](https://img.shields.io/badge/Protocol-Odin-FF6F00)
 
 **👑 Crafted by Anas Malik** — *AMProTeam*
