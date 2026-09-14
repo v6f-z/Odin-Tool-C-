@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="OdinProtocol_Banner.png" alt="OdinProtocol — Samsung Advanced Flasher" width="820">
+
 # 🔥 OdinProtocol — Samsung Advanced Flasher
 
 **A modern Windows flasher for Samsung Galaxy devices — built on the Odin download-mode protocol**
