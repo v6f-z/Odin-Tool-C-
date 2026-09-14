@@ -176,6 +176,6 @@ Note that third-party components (Guna.UI2, SharpOdinClient, K4os libraries) are
 
 <div align="center">
 
-**ادعم المشروع بنجمة ⭐**
+**Support the project with a star ⭐**
 
 </div>
