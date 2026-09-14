@@ -2,8 +2,7 @@
 
 # 🔥 OdinProtocol — Samsung Advanced Flasher
 
-**أداة فلاش حديثة لنظام Windows لأجهزة سامسونج — مبنية على بروتوكول ODIN**  
-*Modern Windows flasher for Samsung Galaxy — built on the Odin download-mode protocol*
+**A modern Windows flasher for Samsung Galaxy devices — built on the Odin download-mode protocol**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 ![.NET Framework](https://img.shields.io/badge/.NET_Framework-4.8-5C2D91)
@@ -12,103 +11,83 @@
 ![UI](https://img.shields.io/badge/UI-Guna.UI2-6A0DAD)
 ![Protocol](https://img.shields.io/badge/Protocol-Odin-FF6F00)
 
-**👑 صنع بواسطة أنس بن مالك يفوز** — *Crafted by Anas Malik*
+**👑 Crafted by Anas Malik** — *AMProTeam*
 
 </div>
 
 ---
 
-## 🌍 نبذة — About
+## 🌍 About
 
-> **العربية:** التجربة الأقرب إلى الأداة الأصلية، بتصميم داكن عصري. حمّل حزم البرامج الثابتة
-> (BL / AP / CP / CSC) بمختلف صيغها، اختر أو اقرأ ملف `PIT` من الجهاز مباشرة، ثم ابدأ الفلاش
-> مع سجلّ أوامر حيٍّ وعداد تقدّم — كل ذلك بواجهة WinForms أنيقة من Guna.UI2.
+The closest experience to the stock tool, wrapped in a sleek dark theme. Load your firmware
+bundles (**BL / AP / CP / CSC**), pick or read a **PIT** file straight from the device, then
+flash **LZ4-compressed** partitions with a live color-coded console and a per-file progress bar —
+all from a polished **Guna.UI2** desktop interface.
 
-> **English:** The closest experience to the stock tool, wrapped in a sleek dark theme.
-> Load your firmware bundles (BL / AP / CP / CSC), pick or read a `PIT` file straight from
-> the device, then flash LZ4-compressed partitions with a live color-coded console and a
-> per-file progress bar — from a polished Guna.UI2 desktop UI.
-
-> ⚠️ **تحذير / Warning:** الفلاش الخاطئ قد يدمر جهازك نهائياً (brick).
-> **Flashing wrong firmware can permanently damage your device.** أنت المسؤول وحدك عن كل ما تفعله.
-> See [Safety & Disclaimer](#-safety--disclaimer) before using.
+> ⚠️ **Warning:** Flashing wrong firmware can **permanently damage** your device (brick).
+> You are solely responsible for what you do with this tool. See
+> [Safety & Disclaimer](#-safety--disclaimer) before using.
 
 ---
 
-## ✨ المميزات — Features
+## ✨ Features
 
-### 🇸🇦 بالعربية
-
-| | | |
-|---|---|---|
-| 📦 | **تحميل حزم البرامج الثابتة** — BL (bootloader)، AP (PDA/Android)، CP (مودم)، CSC (حسب المنطقة)، بصيغ `.tar` / `.md5` / `.limra`. |
-| 🗺️ | **دعم PIT** — اختر ملف `.pit` من القرص، أو دع التطبيق يعثر عليه داخل حزمة TAR ويتحقق منه تلقائياً. |
-| 📖 | **قراءة PIT من الجهاز** — اسحب جدول الأقسام الحقيقي من هاتفك واحفظه على القرص. |
-| ⚡ | **كشف أقسام LZ4** — يقرأ محتويات حزمة TAR، يكتشف كتل `.lz4` ويحسب أحجامها الحقيقية غير المضغوطة. |
-| 🛠️ | **خيارات الفلاش** — إعادة التقسيم (Repartition)، تحديث BOOT، مسح EFS، إعادة تشغيل تلقائية (Auto Reboot). |
-| 🖥️ | **كونسول حيّ** — سجلّ أوامر ملوّن لأي خطوة في البروتوكول، مع شريط تقدّم لكل ملف. |
-| 🎨 | **واجهة داكنة عصرية** — نافذة بدون إطار، زوايا دائرية، وعناصر Guna.UI2. |
-| 🛡️ | **حارس أمان EFS** — نافذة تحذير قبل أي عملية تمسّ أقسام EFS. |
-| ✅ | **جدول أقسام قابل للتفعيل** — كل قسم يظهر مثبّتاً، يمكنك إلغاء تحديد ما لا تريد فلاشه بسهولة. |
-
-### 🇬🇧 In English
-
-- **Load firmware packages** — BL (bootloader), AP (PDA/Android), CP (modem/baseband), and CSC (country-specific) as `.tar`, `.md5`, or `.limra` bundles.
-- **PIT support** — select a `.pit` file from disk, or let the app find and validate one hidden inside a TAR package.
-- **Read PIT from device** — pull the live partition table off your phone and save it.
-- **LZ4 partition detection** — parses TAR contents, detects `.lz4` blobs, and computes their real uncompressed sizes.
-- **Flash options** — Repartition, Update BOOT, Clear EFS, Auto Reboot.
-- **Live console** — color-coded log of every protocol step, with a per-file progress bar.
-- **Dark modern UI** — frameless window, rounded corners, Guna.UI2 controls.
-- **EFS safety guard** — a warning dialog before any operation that clears EFS.
-- **Interactive partition grid** — every partition is pre-checked; uncheck what you don't want to flash.
+- 📦 **Load firmware packages** — BL (bootloader), AP (PDA/Android), CP (modem/baseband), CSC (country-specific) as `.tar`, `.md5`, or `.limra` bundles.
+- 🗺️ **PIT support** — select a `.pit` file from disk, or let the app find and validate one hidden inside a TAR package.
+- 📖 **Read PIT from device** — pull the live partition table off your phone and save it.
+- ⚡ **LZ4 partition detection** — parses TAR contents, detects `.lz4` blobs, and computes their real uncompressed sizes.
+- 🛠️ **Flash options** — Repartition, Update BOOT, Clear EFS, Auto Reboot.
+- 🖥️ **Live console** — color-coded log of every protocol step, with a per-file progress bar.
+- 🎨 **Dark modern UI** — frameless window, rounded corners, Guna.UI2 controls.
+- 🛡️ **EFS safety guard** — a warning dialog before any operation that clears EFS.
+- ✅ **Interactive partition grid** — every partition is pre-checked; uncheck anything you don't want to flash.
 
 ---
 
-## 📸 لقطات — Screenshots
+## 📸 Screenshots
 
-*(أضف لقطات للنافذة الرئيسية هنا / Add screenshots of the main window here — ستنشر مع الـ Releases)*
+*(Add screenshots of the main window here — will be shipped with the Releases)*
 
 ---
 
-## 🧩 المتطلبات — Requirements
+## 🧩 Requirements
 
 - **Windows 7 / 8 / 8.1 / 10 / 11**
-- **[.NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/net48)** (أو أحدث)
-- جهاز سامسونج في **وضع الداونلود** والكابل موصول:
-  - الأجهزة القديمة: `خفض الصوت + الرئيسي + التشغيل`
-  - الأجهزة الأحدث: `خفض الصوت + رفع الصوت + توصيل USB`
-- حزمة برامج ثابتة مطابقة لموديل جهازك **بالضبط**
+- **[.NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/net48)** (or newer)
+- A Samsung device in **Download Mode** with the USB cable connected:
+  - Older devices: `Volume Down + Home + Power`
+  - Newer devices: `Volume Down + Volume Up + USB connect`
+- A firmware package that exactly matches your device model and region
 
 ---
 
-## 🛠️ البناء من المصدر — Building from source
+## 🛠️ Building from source
 
-1. افتح `OdinProtocol C# .Net By Anas Malik.slnx` في **Visual Studio 2022 (17.10+)**
-2. تُستعاد حزم NuGet تلقائياً عند البناء
-3. ابنِ الحل في وضع `Release`
+1. Open `OdinProtocol C# .Net By Anas Malik.slnx` in **Visual Studio 2022 (17.10+)**.
+2. NuGet packages are restored automatically on build.
+3. Build the solution in **Release** mode.
 
-> المشروع يدعم أيضاً استعادة `packages.config` التقليدية لتعمل مع الأدوات الأقدم.
-> البيان (`app.manifest`) يطلب صلاحيات **المسؤول (Administrator)** — وهذا إلزامي للتخاطب
-> مع تعريف الجهاز أثناء الفلاش.
+> The project also supports legacy `packages.config` restore, so older tooling still works.
+> The manifest (`app.manifest`) requests **administrator** rights — required to talk to the
+> device driver during flashing.
 
 ---
 
-## 🚀 الاستخدام — Usage
+## 🚀 Usage
 
-| الخطوة | الوصف |
+| Step | Description |
 |---|---|
-| 1 | شغّل التطبيق (يجب تشغيله كمسؤول). |
-| 2 | ضع جهازك في **وضع الداونلود** ووصّله. |
-| 3 | حمّل حزم البرامج الثابتة: **BL** ← بوت لودر · **AP** ← نظام أندرويد · **CP** ← المودم · **CSC** ← حزمة المنطقة |
-| 4 | تظهر أقسام الحزم في الجدول مثبّتة — ألغِ تحديد ما لا تريد فلاشه. |
-| 5 | اختياري: **Select PIT** (ضروري لإعادة التقسيم) أو **Read PIT** لحفظ الجدول الحالي. |
-| 6 | اختر خيارات الفلاش: **Auto Reboot**، **Repartition** (يتطلب PIT)، **Update BOOT**، **Clear EFS** ⚠️ |
-| 7 | اضغط **Flash** وانتظر — يعرض الكونسول كل خطوة والنتيجة النهائية OK/Failed. |
+| 1 | Launch the app (it must run as administrator). |
+| 2 | Put your device in **Download Mode** and connect it. |
+| 3 | Load your firmware packages: **BL** → bootloader · **AP** → Android/PDA · **CP** → modem · **CSC** → country-specific. |
+| 4 | Every partition appears in the grid, pre-checked. Uncheck any you don't want to flash. |
+| 5 | Optional: **Select PIT** (needed for repartitioning) or **Read PIT** to save the current table. |
+| 6 | Choose flash options: **Auto Reboot**, **Repartition** (requires a PIT file), **Update BOOT**, **Clear EFS** ⚠️. |
+| 7 | Press **Flash** and wait — the console shows each protocol step and the final OK/Failed result. |
 
 ---
 
-## 🗂️ هيكل المشروع — Project structure
+## 🗂️ Project structure
 
 ```
 ├── Controllers/
@@ -137,49 +116,49 @@
 └── Program.cs                    Entry point
 ```
 
-التصميم طبقي نظيف: **Form (View) → FlashController → Services → Odin layer**،
-والمعالجة المنخفضة المستوى للبروتوكول مفوَّضة إلى مكتبة `SharpOdinClient`.
+A clean layered design: **Form (View) → FlashController → Services → Odin layer**, with the
+low-level protocol handling delegated to the `SharpOdinClient` library.
 
 ---
 
-## 📦 تبعيات NuGet — Dependencies
+## 📦 NuGet dependencies
 
-| الحزمة | الغرض |
+| Package | Purpose |
 |---|---|
-| [Guna.UI2.WinForms](https://www.nuget.org/packages/Guna.UI2.WinForms) 2.0.4.8 | عناصر واجهة حديثة |
-| [SharpOdinClient](https://www.nuget.org/packages/SharpOdinClient) 1.0.2 | محرك بروتوكول Odin |
-| K4os.Compression.LZ4 (+ Legacy, Streams) | فك ضغط LZ4 لكتل البرامج الثابتة |
-| K4os.Hash.xxHash | التحقق من التجزئة أثناء قراءة TARs |
+| [Guna.UI2.WinForms](https://www.nuget.org/packages/Guna.UI2.WinForms) 2.0.4.8 | Modern UI controls |
+| [SharpOdinClient](https://www.nuget.org/packages/SharpOdinClient) 1.0.2 | Odin protocol engine |
+| K4os.Compression.LZ4 (+ Legacy, Streams) | LZ4 decompression of firmware blobs |
+| K4os.Hash.xxHash | Hash verification while parsing TARs |
 
 ---
 
-## ⚠️ توافق وملاحظات — Compatibility notes
+## ⚠️ Compatibility notes
 
-- حزم البرامج الثابتة يجب أن تطابق موديل جهازك ومنطقتك **بالضبط** — الفلاش الخاطئ قد **يُتلف** الجهاز.
-- بعض الموديلات (موجّهة لشركات اتصالات أمريكية أو أجهزة أحدث) قد تحتاج خطوات إضافية غير مشمولة هنا.
-- هذا تنفيذ مستقل لبروتوكول Odin مبني على المشروع مفتوح المصدر `SharpOdinClient`؛ **غير تابع لشركة سامسونج ولا معتمد منها**.
-
----
-
-## 🛡️ السلامة وإخلاء المسؤولية — Safety & Disclaimer
-
-- **استخدم على مسؤوليتك.** برامج ثابتة خاطئة، أو فلاش متقطع، أو مسح EFS قد يتلف جهازك، يمسح IMEI، أو يبطل الضمان.
-- احتفظ دائماً **بنسخة EFS احتياطية كاملة** قبل أي عملية تلامس EFS.
-- **لا تفصل الجهاز عن الكابل أثناء الفلاش.**
-- لا يتحمل المؤلف أي مسؤولية عن أي ضرر ناتج عن استخدام هذه الأداة.
+- Firmware packages must match your exact device model and region — flashing the wrong files can **brick** the device.
+- Some models (e.g. US-carrier or newer devices) may need additional steps not covered here.
+- This is an independent implementation of the Odin protocol based on the open-source `SharpOdinClient`; it is **not affiliated with or endorsed by Samsung Electronics**.
 
 ---
 
-## 📜 الرخصة — License
+## 🛡️ Safety & Disclaimer
 
-هذا المشروع مرخّص بموجب **رخصة MIT** — انظر ملف [LICENSE](LICENSE).
-لاحظ أن مكونات الطرف الثالث (Guna.UI2، SharpOdinClient، مكتبات K4os) تخضع لتراخيصها الخاصة.
+- **Use at your own risk.** Wrong firmware, interrupted flashing, or clearing EFS can permanently damage your device, erase your IMEI, or void your warranty.
+- Always keep a **full EFS backup** before any operation that touches EFS.
+- Do **not** unplug the device during flashing.
+- The author assumes no responsibility for any damage caused by the use of this tool.
 
 ---
 
-## 🙌 تواصل معي — Connect with me
+## 📜 License
 
-| المنصة | الرابط |
+This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file.
+Note that third-party components (Guna.UI2, SharpOdinClient, K4os libraries) are subject to their own licenses.
+
+---
+
+## 🙌 Connect with me
+
+| Platform | Link |
 |---|---|
 | <img src="https://img.shields.io/badge/Telegram-2CA5E0?logo=telegram&logoColor=white" alt="Telegram"> | [t.me/v6f_z](https://t.me/v6f_z) |
 | <img src="https://img.shields.io/badge/Instagram-E4405F?logo=instagram&logoColor=white" alt="Instagram"> | [instagram.com/v6f_z](https://instagram.com/v6f_z) |
@@ -187,12 +166,12 @@
 | <img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white" alt="GitHub"> | [github.com/v6f-z](https://github.com/v6f-z) |
 | <img src="https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white" alt="Email"> | [anasmalikopop@gmail.com](mailto:anasmalikopop@gmail.com) |
 
-**AMProTeam** — أنس بن مالك يفوز | *Anas Malik*
+**AMProTeam** — *Anas Malik*
 
 ---
 
 <div align="center">
 
-**وصلنا بنهاية الأداة إلى الريليز القادم 🚀** — *Stay tuned for the Releases!*
+**The tool is now ready for its next release 🚀** — *Stay tuned!*
 
 </div>
