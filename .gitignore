@@ -1,0 +1,53 @@
+# Build output
+bin/
+obj/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build results from IDE (Azure DevOps)
+build/
+bld/
+
+# NuGet packages (restored on build)
+packages/
+*.nupkg
+*.snupkg
+
+# Test results
+TestResults/
+[Tt]est[Rr]esult*/
+*.trx
+
+# Rider
+.idea/
+
+# VS Code
+.vscode/
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Files from Nunit, MSBuild, etc.
+*.log
+*.tmp
+*.cache
+
+# Crash dumps
+*.dmp
+*.wpr
+*.wpa
+
+# Publish files
+*.publish.xml
+*.pubxml
+publish/
+
+# Backups
+Backup/
